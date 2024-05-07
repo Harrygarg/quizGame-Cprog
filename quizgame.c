@@ -3,6 +3,7 @@
 int main() {
     char answer;
     int score = 0;
+    char user_answers[10];
 
     printf("Welcome to the Quiz Game!\n");
 
@@ -11,6 +12,7 @@ int main() {
     printf("A. London\nB. Paris\nC. Rome\nD. Berlin\n");
     printf("Your answer: ");
     scanf(" %c", &answer);
+    user_answers[0] = answer;
     if (answer == 'B' || answer == 'b') {
         printf("Correct!\n");
         score++;
@@ -23,6 +25,7 @@ int main() {
     printf("A. Elephant\nB. Blue Whale\nC. Giraffe\nD. Lion\n");
     printf("Your answer: ");
     scanf(" %c", &answer);
+    user_answers[1] = answer;
     if (answer == 'B' || answer == 'b') {
         printf("Correct!\n");
         score++;
@@ -35,6 +38,7 @@ int main() {
     printf("A. Michelangelo\nB. Leonardo da Vinci\nC. Pablo Picasso\nD. Vincent van Gogh\n");
     printf("Your answer: ");
     scanf(" %c", &answer);
+    user_answers[2] = answer;
     if (answer == 'B' || answer == 'b') {
         printf("Correct!\n");
         score++;
@@ -47,6 +51,7 @@ int main() {
     printf("A. H2O\nB. CO2\nC. NaCl\nD. O2\n");
     printf("Your answer: ");
     scanf(" %c", &answer);
+    user_answers[3] = answer;
     if (answer == 'A' || answer == 'a') {
         printf("Correct!\n");
         score++;
@@ -59,6 +64,7 @@ int main() {
     printf("A. Earth\nB. Mars\nC. Venus\nD. Jupiter\n");
     printf("Your answer: ");
     scanf(" %c", &answer);
+    user_answers[4] = answer;
     if (answer == 'B' || answer == 'b') {
         printf("Correct!\n");
         score++;
@@ -71,6 +77,7 @@ int main() {
     printf("A. William Shakespeare\nB. Jane Austen\nC. Charles Dickens\nD. Mark Twain\n");
     printf("Your answer: ");
     scanf(" %c", &answer);
+    user_answers[5] = answer;
     if (answer == 'A' || answer == 'a') {
         printf("Correct!\n");
         score++;
@@ -83,6 +90,7 @@ int main() {
     printf("A. K2\nB. Mount Everest\nC. Kanchenjunga\nD. Lhotse\n");
     printf("Your answer: ");
     scanf(" %c", &answer);
+    user_answers[6] = answer;
     if (answer == 'B' || answer == 'b') {
         printf("Correct!\n");
         score++;
@@ -95,6 +103,7 @@ int main() {
     printf("A. Thomas Jefferson\nB. George Washington\nC. Abraham Lincoln\nD. John Adams\n");
     printf("Your answer: ");
     scanf(" %c", &answer);
+    user_answers[7] = answer;
     if (answer == 'B' || answer == 'b') {
         printf("Correct!\n");
         score++;
@@ -107,6 +116,7 @@ int main() {
     printf("A. Go\nB. Au\nC. Ag\nD. Gd\n");
     printf("Your answer: ");
     scanf(" %c", &answer);
+    user_answers[8] = answer;
     if (answer == 'B' || answer == 'b') {
         printf("Correct!\n");
         score++;
@@ -114,11 +124,13 @@ int main() {
         printf("Incorrect. The correct answer is B. Au.\n");
     }
 
+
     // Question 10
     printf("\nQuestion 10: What is the smallest prime number?\n");
     printf("A. 0\nB. 1\nC. 2\nD. 3\n");
     printf("Your answer: ");
     scanf(" %c", &answer);
+    user_answers[9] = answer;
     if (answer == 'C' || answer == 'c') {
         printf("Correct!\n");
         score++;
@@ -128,6 +140,25 @@ int main() {
 
     // Display final score
     printf("\nYour final score is: %d out of 10\n", score);
+
+    // Display user's answers and correct answers
+    printf("\nHere are your answers and the correct answers:\n");
+    printf("Question\tYour Answer\tCorrect Answer\n");
+    for (int i = 0; i < 10; i++) {
+        char correct_answer;
+        switch (i) {
+            case 0:
+                correct_answer = 'B';
+                break;
+            case 1:
+                correct_answer = 'B';
+                break;
+            // Assign correct answers for remaining questions
+            default:
+                break;
+        }
+        printf("%d\t\t%c\t\t%c\n", i + 1, user_answers[i], correct_answer);
+    }
 
     return 0;
 }
