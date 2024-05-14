@@ -206,6 +206,12 @@ int main() {
             case 9:
                 correct_answer = 'C';
                 break;
+            case 10:
+                correct_answer = 'B';
+                break;
+            case 11:
+                correct_answer = 'C';
+                break;
             default:
                 break;
         }
@@ -216,5 +222,6 @@ int main() {
     printf("THANKS FOR GIVING THE TEST !!!!\n");
     printf("**************************\n");
     printf("THANKS FOR GIVING THE TEST !!!!\n");
+    printf("We have completed  the project");
     return 0;
 }
