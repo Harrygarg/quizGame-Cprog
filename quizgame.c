@@ -214,5 +214,7 @@ int main() {
 
      printf("**************************\n");
     printf("THANKS FOR GIVING THE TEST !!!!\n");
+    printf("**************************\n");
+    printf("THANKS FOR GIVING THE TEST !!!!\n");
     return 0;
 }
