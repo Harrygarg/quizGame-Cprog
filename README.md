@@ -3,6 +3,6 @@ This is a quiz Game repository in  which we are making a quiz game using c repos
 <br>
 User-1 harrygarg457@gamil.com
 <br>
-User-2 siddhamchakarpani@gmail.com
+User-2 samridhi470@gmail.com
 <br>
-User-3 samridhi470@gamil.com
+User-3 siddhamchakarpani@gmail.com
