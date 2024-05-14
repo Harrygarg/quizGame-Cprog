@@ -8,6 +8,9 @@ int main() {
     printf("Welcome to the most interesting Quiz-Quiz\n");
     printf("**************************\n");
     printf("C programming\n");
+     printf("**************************\n");
+    printf("C programming\n");
+
     
     // Question 1
     printf("\nQuestion 1 (9 remaining): What is the capital of France?\n");
@@ -209,5 +212,7 @@ int main() {
         printf("%d\t\t%c\t\t%c\n", i + 1, user_answers[i], correct_answer);
     }
 
+     printf("**************************\n");
+    printf("THANKS FOR GIVING THE TEST !!!!\n");
     return 0;
 }
