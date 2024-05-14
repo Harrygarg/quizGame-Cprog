@@ -137,6 +137,31 @@ int main() {
         printf("Incorrect. The correct answer is C. 2.\n");
     }
 
+    // Question 11
+    printf("\nQuestion 11 (0 remaining): What is the smallest prime number?\n");
+    printf("A. 0\nB. 1\nC. 2\nD. 3\n");
+    printf("Your answer: ");
+    scanf(" %c", &answer);
+    user_answers[9] = answer;
+    if (answer == 'C' || answer == 'c') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Incorrect. The correct answer is C. 2.\n");
+    }
+
+    // Question 12
+    printf("\nQuestion 12 (0 remaining): What is the smallest prime number?\n");
+    printf("A. 0\nB. 1\nC. 2\nD. 3\n");
+    printf("Your answer: ");
+    scanf(" %c", &answer);
+    user_answers[9] = answer;
+    if (answer == 'C' || answer == 'c') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Incorrect. The correct answer is C. 2.\n");
+    }
     // Display final score
     printf("\nYour final score is: %d out of 10\n", score);
 
