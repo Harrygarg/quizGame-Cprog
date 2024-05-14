@@ -5,8 +5,10 @@ int main() {
     int score = 0;
     char user_answers[10];
 
-    printf("Welcome to the Quiz Game!\n");
-
+    printf("Welcome to the most interesting Quiz-Quiz\n");
+    printf("**************************\n");
+    printf("C programming\n");
+    
     // Question 1
     printf("\nQuestion 1 (9 remaining): What is the capital of France?\n");
     printf("A. London\nB. Paris\nC. Rome\nD. Berlin\n");
